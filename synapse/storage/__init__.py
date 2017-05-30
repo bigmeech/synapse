@@ -37,7 +37,7 @@ from .media_repository import MediaRepositoryStore
 from .rejections import RejectionsStore
 from .event_push_actions import EventPushActionsStore
 from .deviceinbox import DeviceInboxStore
-
+from .group_server import GroupServerStore
 from .state import StateStore
 from .signatures import SignatureStore
 from .filtering import FilteringStore
@@ -86,6 +86,7 @@ class DataStore(RoomMemberStore, RoomStore,
                 ClientIpStore,
                 DeviceStore,
                 DeviceInboxStore,
+                GroupServerStore,
                 ):
 
     def __init__(self, db_conn, hs):
